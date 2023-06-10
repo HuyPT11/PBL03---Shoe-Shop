@@ -1,0 +1,47 @@
+/* Main */
+main {
+    display: flex;
+}
+
+.main__block {
+    margin: 0 auto;
+    background-color: rgb(250, 249, 249);
+    max-width: 500px;
+    border: 0.3px solid rgb(176, 170, 170);
+    display: flex;
+}
+
+.main__infor-list {
+    padding: 30px 40px;
+}
+
+.main__infor-item {
+    padding: 6px 10px;
+}
+
+.main__infor-item--title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main__infor-item--content {
+    width: 350px;
+    height: 35px;
+}
+
+
+        /* Button: Lưu thay đổi */
+.main__button{
+    margin-top: 20px;
+    text-align: center;
+}
+.main__button-luuthaydoi {
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}

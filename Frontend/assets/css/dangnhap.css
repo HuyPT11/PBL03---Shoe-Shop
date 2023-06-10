@@ -1,0 +1,68 @@
+/* Main */
+.main__title {
+    margin: 30px 0 40px 30px;
+    display: flex;
+}
+
+.main__title-item--line {
+    flex: 1;
+}
+
+.main__title-item--midline {
+    border: 0.3px dashed rgb(194, 187, 187);
+    margin: 15px 10px;
+}
+
+.main__block {
+    margin: 0 auto;
+    background-color: rgb(250, 249, 249);
+    max-width: 500px;
+    border: 0.3px solid rgb(176, 170, 170);
+    display: flex;
+}
+
+.main__infor-list {
+    padding: 30px 40px;
+}
+
+.main__infor-item {
+    padding: 6px 10px;
+}
+
+.main__infor-item--title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main__infor-item--content {
+    width: 350px;
+    height: 35px;
+    font-size: 15px;
+}
+
+/* Anchor: quên mật khẩu */
+.main__infor-item--a_quenmatkhau {
+    font-size: 1.4rem;
+}
+
+/* Button đăng ký*/
+.main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main__button-dangnhap{
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+}
+.main__button-dangnhap:hover{
+    background-color: #eddb81;
+}
+

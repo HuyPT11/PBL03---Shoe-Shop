@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đơn hàng</title>
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/donhang.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+        rel="stylesheet"
+        href="/assets/fontawesome-free-6.4.0-web/css/all.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+        />
+
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header>
+            <div
+                style="
+                position: relative;
+                background: url(assets/img/giohang.png);
+                width: 100%;
+                height: 400px;
+                margin-bottom: 50px;
+                "
+            >
+                <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                    <img
+                        src="assets/img/logo.png"
+                        alt=""
+                        class="header__navbar-item--logo"
+                    />
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                    <a href="" class="header__navbar-item--a">TRANG CHỦ</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                    <!-- Position -->
+                    <a href="" class="header__navbar-item--a"
+                        >NAM
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="header__dropdown--NAM">
+                        <ul class="header__dropdown--NAM-list">
+                        <li class="header__dropdown--NAM-item">
+                            <a href="" class="header__dropdown--NAM-link">
+                            Giày thể thao
+                            </a>
+                        </li>
+                        <li class="header__dropdown--NAM-item">
+                            <a href="" class="header__dropdown--NAM-link">
+                            Giày Sneakers
+                            </a>
+                        </li>
+                        <li class="header__dropdown--NAM-item">
+                            <a href="" class="header__dropdown--NAM-link"> Giày da </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <!-- Position -->
+                        <a href="" class="header__navbar-item--a"
+                            >NỮ
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="header__dropdown--NU">
+                            <ul class="header__dropdown--NU-list">
+                                <li class="header__dropdown--NU-item">
+                                    <a href="" class="header__dropdown--NU-link">
+                                    Giày thể thao
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NU-item">
+                                    <a href="" class="header__dropdown--NU-link">
+                                    Giày Sneakers
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NU-item">
+                                    <a href="" class="header__dropdown--NU-link"> Giày da </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>           
+                    <li class="header__navbar-item">
+                        <a href="donhang.html" class="header__navbar-item--a header__navbar-item--a-donhang">ĐƠN HÀNG</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item--a">
+                           <i class="fa-regular fa-user header__navbar-item--icon-hoso"></i>
+                        </a>
+
+                        <div class="header__dropdown--icon">
+                            <ul class="header__dropdown--icon-list">
+                                <li class="header__dropdown--icon-item">
+                                    <a href="hosokhachhang.html" class="header__dropdown--icon-link">
+                                    Xem thông tin 
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--icon-item">
+                                    <a href="capnhatthongtin.html" class="header__dropdown--icon-link">
+                                    Cập nhật thông tin
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--icon-item">
+                                    <a href="doimatkhau.html" class="header__dropdown--icon-link">
+                                    Đổi mật khẩu 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                 
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item--a">
+                            <i class="fa-solid fa-cart-shopping header__navbar-item--icon-giohang"></i>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+                <div class="header__title">
+                    <ul class="header__title-list header__title--large">
+                        <li class="header__title-item">ĐƠN HÀNG CỦA TÔI</li>
+                    </ul>
+                    <ul class="header__title-list header__title--small">
+                        <li class="header__title-item header__title-item--yellow">
+                        TRANG CHỦ
+                        </li>
+                        <li class="header__title-item">/</li>                      
+                        <li class="header__title-item">ĐƠN HÀNG</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <ul class = "main__title">
+                    <li class="main__title-item main__title-item--content">
+                        <h1 >THÔNG TIN CÁC ĐƠN HÀNG</h1>         
+                    </li>
+                    <li class="main__title-item main__title-item--line">   
+                        <div class="main__title-item--midline">  </div>                
+                    </li>
+                 </ul>
+            </div>
+                        <div class="main__header">
+                <ul class="main__header-list">
+                    <li class="main__header-item">
+                        <div class="input-group mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Tìm kiếm"
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2"
+                        />
+                        <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                        >
+                            Tìm kiếm
+                        </button>
+                        </div>
+                    </li>
+                    <li class="main__header-item">
+                        <select
+                        class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example"
+                        >
+                        <option selected>Mới nhất</option>
+                        <option value="1">Thứ tự theo tổng giá tiền: thấp đến cao</option>
+                        <option value="2">Thứ tự theo tổng giá tiền: cao xuống thấp</option>
+                        <option value="3">Đã hủy</option>                       
+                         <!-- <option value="3">Mới nhất</option> -->
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main__orderlist">
+
+                <!-- Đơn hàng 1 -->
+                <div class="main__order">
+                    <div class="main__order-product">
+                        <div class="main__order-product--img">
+                            <img src="./assets/img/E223227J.png" alt="" class="order-product--img">
+                        </div>
+                        <div class="main__order-product--detail">
+                            <ul class="main__order-product--detail-list">
+                                <li class="main__order-product--detail-item">
+                                    <label class="main__order-product--detail-lb-name" for="" >Giày Nike Wmns Air Jordan 1</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for=""class="main__order-product--detail-lb-brand_size_color" >Nike  ,  38  ,  Đen</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for="" class="main__order-product--detail-lb_quantity">x1</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__order-product--price">
+                            <ul class="main__order-product--price-list">
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giagoc" for="" >1,590,000</label>
+                                </li>
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giakm" for="">1,431,000</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__order-line">
+                        <div class="main__order-line-border">
+                            
+                        </div>
+                    </div>
+                    <div class="main__order-product">
+                        <div class="main__order-product--img">
+                            <img src="./assets/img/E223227J.png" alt="" class="order-product--img">
+                        </div>
+                        <div class="main__order-product--detail">
+                            <ul class="main__order-product--detail-list">
+                                <li class="main__order-product--detail-item">
+                                    <label class="main__order-product--detail-lb-name" for="" >Giày Nike Wmns Air Jordan 1</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for=""class="main__order-product--detail-lb-brand_size_color" >Nike  ,  38  ,  Đen</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for="" class="main__order-product--detail-lb_quantity">x1</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__order-product--price">
+                            <ul class="main__order-product--price-list">
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giagoc" for="" >1,590,000</label>
+                                </li>
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giakm" for="">1,431,000</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__order-line">
+                        <div class="main__order-line-border">
+                            
+                        </div>
+                    </div>
+                    <div class="main__order-product--total">
+                        <ul class="main__order-product--total-list">
+                            <li class="main__order-product--total-item">
+                                <i class="fa-solid fa-sack-dollar main__order-product--total-i_icon"></i>
+                            </li>
+                            <li class="main__order-product--total-item">
+                                <label for="" class="main__order-product--total-lb_title">Tổng số tiền:</label>
+                            </li>
+                            <li class="main__order-product--total-item">
+                                <label for="" class="main__order-product--total-lb_content">2,862,000</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Button: Hủy đơn hàng, xem thông tin đơn hàng -->
+                    <div class="main__order-product--button">
+                        <ul class="main__order-product--button-list">
+                            <li class="main__order-product--button-item">
+                                <button type="button" class="main__order-product--button-xemchitietdonhang" onclick="window.location.href='chitietdonhang.html';">
+                                    Xem chi tiết đơn hàng
+                                </button>
+                            </li>
+                            <li class="main__order-product--button-item">
+                                <button type="button" class="main__order-product--button-huydonhang">
+                                    Hủy đơn hàng
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Đơn hàng 2 -->
+                <div class="main__order">
+                    <div class="main__order-product">
+                        <div class="main__order-product--img">
+                            <img src="./assets/img/E223227J.png" alt="" class="order-product--img">
+                        </div>
+                        <div class="main__order-product--detail">
+                            <ul class="main__order-product--detail-list">
+                                <li class="main__order-product--detail-item">
+                                    <label class="main__order-product--detail-lb-name" for="" >Giày Nike Wmns Air Jordan 1</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for=""class="main__order-product--detail-lb-brand_size_color" >Nike  ,  38  ,  Đen</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for="" class="main__order-product--detail-lb_quantity">x1</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__order-product--price">
+                            <ul class="main__order-product--price-list">
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giagoc" for="" >1,590,000</label>
+                                </li>
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giakm" for="">1,431,000</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__order-line">
+                        <div class="main__order-line-border">
+                            
+                        </div>
+                    </div>
+                    <div class="main__order-product">
+                        <div class="main__order-product--img">
+                            <img src="./assets/img/E223227J.png" alt="" class="order-product--img">
+                        </div>
+                        <div class="main__order-product--detail">
+                            <ul class="main__order-product--detail-list">
+                                <li class="main__order-product--detail-item">
+                                    <label class="main__order-product--detail-lb-name" for="" >Giày Nike Wmns Air Jordan 1</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for=""class="main__order-product--detail-lb-brand_size_color" >Nike  ,  38  ,  Đen</label>
+                                </li>
+                                <li class="main__order-product--detail-item">
+                                    <label for="" class="main__order-product--detail-lb_quantity">x1</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__order-product--price">
+                            <ul class="main__order-product--price-list">
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giagoc" for="" >1,590,000</label>
+                                </li>
+                                <li class="main__order-product--price-item">
+                                    <label class="main__order-product--price-lb_giakm" for="">1,431,000</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__order-line">
+                        <div class="main__order-line-border">
+                            
+                        </div>
+                    </div>
+                    <div class="main__order-product--total">
+                        <ul class="main__order-product--total-list">
+                            <li class="main__order-product--total-item">
+                                <i class="fa-solid fa-sack-dollar main__order-product--total-i_icon"></i>
+                            </li>
+                            <li class="main__order-product--total-item">
+                                <label for="" class="main__order-product--total-lb_title">Tổng số tiền:</label>
+                            </li>
+                            <li class="main__order-product--total-item">
+                                <label for="" class="main__order-product--total-lb_content">2,862,000</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Button: Hủy đơn hàng, xem thông tin đơn hàng -->
+                    <div class="main__order-product--button">
+                        <ul class="main__order-product--button-list">
+                            <li class="main__order-product--button-item">
+                                <button type="button" class="main__order-product--button-xemchitietdonhang" onclick="window.location.href='chitietdonhang.html';">
+                                    Xem chi tiết đơn hàng
+                                </button>
+                            </li>
+                            <li class="main__order-product--button-item">
+                                <button type="button" class="main__order-product--button-huydonhang">
+                                    Hủy đơn hàng
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <footer >
+      <div class="footer__infor">
+        <!-- Icons-->
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="footer__item--icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__item--icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__item--icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Thông tin -->
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item--title">THÔNG TIN NKH</h3>
+          </li>
+          <li class="footer__item">
+            <h4 class="footer__item--contact">Địa chỉ: 120 Nguyễn Lương Bằng, Phường Hòa Khánh Bắc, Quận Liên Chiểu, Thành phố Đà Nẵng</h4>
+          </li>
+          <li class="footer__item">
+            <h4 class="footer__item--contact">Hotline: 0826664434</h4>
+          </li>
+          <li class="footer__item">
+            <h4 class="footer__item--contact">Website: https://nkh.vn</h4>
+          </li>
+          <li class="footer__item">
+            <h4 class="footer__item--contact">Email: nkhvn@gmail.com</h4>
+          </li>
+        </ul>
+        
+        <!-- Danh mục nổi bật -->
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item--title">DANH MỤC NỔI BẬT</h3>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__item--danhmucsp">
+              Giày thể thao
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__item--danhmucsp">
+              Giày Sneakers
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__item--danhmucsp">
+              Giày da
+            </a>
+          </li>
+        </ul>
+
+        <!-- Địa chỉ -->
+         <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item--title">TÌM CHÚNG TÔI</h3>
+          </li>
+          <li class="footer__item">
+            <a href="https://www.google.com/maps/place/120+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.0761082,108.1402153,15z/data=!3m1!4b1!4m6!3m5!1s0x314218d1551f2fb5:0x8c83c8054a4dced0!8m2!3d16.0761084!4d108.1489701!16s%2Fg%2F11qn88w7ql?hl=vi" >
+              <img src="./assets/img/ggmap.png" alt="" class="footer__item--img-ggmap">
+            </a>
+          </li>        
+        </ul>
+      </div>
+    </footer>
+
+    </body>
+</html>

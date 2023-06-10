@@ -1,0 +1,118 @@
+.home-content--title {
+    border-bottom: 0.5px solid gainsboro;
+    padding: 30px 0 20px 30px;
+
+}
+
+.lb_thongtinchung {
+    color: #3d405c !important;
+    font-size: 2.4rem !important;
+    font-weight: 600;
+}
+
+.home-content--infor {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    /* padding: 20px 20px; */
+    /* margin-left: 50px; */
+    /* width: 700px; */
+}
+
+.home-content--infor-list {
+    padding: 5px 30px;
+}
+
+.home-content--infor-item {
+    padding: 5px;
+    list-style: none;
+}
+
+.home-content--infor-item label {
+    color: #71748d;
+    font-size: 1.5rem;
+}
+
+.home-content--infor-item input {
+    width: 500px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+.home-content--infor-item--text {
+    word-wrap: break-word;
+
+}
+
+.home-content--infor-item--img {
+    padding-right: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+
+
+/* Nút  Thêm sản phẩm */
+.home-content--button {
+    margin: 30px 450px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+.snip1582 {
+    background-color: #41484a;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    margin: 0 20px;
+    outline: none;
+    padding: 15px 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.snip1582:before,
+.snip1582:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.snip1582:before {
+    border-color: #41484a;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.snip1582:after {
+    border-bottom-width: 2px;
+    border-color: #41484a;
+    bottom: -5px;
+    right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+    background-color: #0A2558;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+    height: 100%;
+    width: 100%;
+}

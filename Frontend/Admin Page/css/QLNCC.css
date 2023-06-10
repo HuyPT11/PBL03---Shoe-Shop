@@ -1,0 +1,262 @@
+.home__content-tool {
+    margin: 30px 50px;
+}
+
+.home__content-tool-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home__content-tool-item {
+    /* margin: 0 15px; */
+    display: inline-block;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    margin-left: 20px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tr {
+    height: 50px;
+    word-wrap: break-word;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+tr th {
+    text-align: center;
+}
+
+.th-tendai {
+    min-width: 150px;
+}
+
+.td__a-icon {
+    text-decoration: none;
+    color: red;
+    padding-left: 10px;
+}
+
+/* Sort */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #41484a;
+    background-image: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 40px;
+    line-height: 2;
+    background: #fff;
+    overflow: hidden;
+    border-radius: .25em;
+
+}
+
+select {
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px !important;
+}
+
+/* thiết kế dấu mũi tên */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding: 0 1em;
+    background: #41484a;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    color: white;
+}
+
+/* Transition */
+.select:hover::after {
+    color: Gainsboro;
+}
+
+.select select option {
+    font-size: 16px;
+}
+
+
+/* Button Add */
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+.snip1582 {
+    background-color: #41484a;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    margin: 0 20px;
+    outline: none;
+    padding: 15px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.snip1582:before,
+.snip1582:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.snip1582:before {
+    border-color: #41484a;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.snip1582:after {
+    border-bottom-width: 2px;
+    border-color: #41484a;
+    bottom: -5px;
+    right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+    background-color: #0A2558;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+#cbb1 {
+    color: white;
+}
+
+                                /* Search */
+.box__search {
+   /* // margin: 100px auto; */
+    width: 300px;
+    height: 40px;
+}
+
+/* Search 4 - appear looking glass */
+.container-4 {
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    /* position: relative; */
+}
+
+.container-4 input#search {
+    width: 300px;
+    height: 40px;
+    background: #41484a;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+    color: white;
+}
+
+.container-4 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+.container-4 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+    color: white;
+}
+
+.container-4 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 40px;
+    width: 50px;
+    color: white;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+/* ANIMATION EFFECT */
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,310 @@
+/* Main */
+
+/* Phần ảnh */
+.main {
+    margin-top: 50px;
+
+}
+
+.main__detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 100px;
+}
+
+.main__detail-img {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+
+}
+
+.main__detail-img--main {
+    width: 500px;
+    height: 450px;
+}
+
+.main__detail-img--list {
+    margin: auto 0;
+}
+
+.main__detail-img--list>li {
+    padding: 10px 16px;
+}
+
+.main__detail-img--sub {
+    max-width: 80px;
+    min-height: 80px;
+}
+
+/* Phần chi tiết sán phẩm */
+
+.main__detail-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px 80px;
+}
+
+.main__detail-description-list>li {
+    display: inline-block;
+}
+
+/* .main__detail-description-list--size {
+    display: flex;
+    flex
+} */
+.main__detail-description-list--color,
+.main__detail-description-list--size {
+    list-style: none;
+
+}
+
+.main__detail-description-list--color li,
+.main__detail-description-list--size li {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 10px 10px;
+}
+
+.main__detail-description-item--name {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main__detail-description-item--title {
+    font-size: 1.8rem;
+}
+
+.main__detail-description-item--content {
+    padding-left: 10px;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.main__detail-description-item--giakm {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: red;
+}
+
+/* Chú ý: Label ko Text-decoration đc   ->  Dùng h3 */
+.main__detail-description-item--giagoc {
+    color: rgba(81, 67, 67, 0.586);
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding-left: 15px;
+    text-decoration: line-through;
+}
+
+.color-radio,
+.size-radio {
+    font-size: 1.6rem;
+}
+
+/* Dòng kẻ ở giữa */
+.main__detail-description-item--line {
+    border: 0.1px dashed rgb(197, 188, 188);
+    min-width: 400px;
+}
+
+/* Số lượng + Thêm vào giỏ hàng */
+.main__detail-description-list--quantity_addcart {
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+.main__detail-description-item--addcart {
+    padding-left: 30px;
+}
+
+.input__number--quantity {
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 50px;
+}
+
+.btn__addcart {
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.icon-giohang {
+    color: white
+}
+
+/* Mô tả sản phẩm */
+/* Tiêu đề */
+.main__descriptionproduct-title {
+    margin: 30px 0 20px 30px;
+    display: flex;
+}
+
+.main__descriptionproduct-title-item--line {
+    flex: 1;
+}
+
+.main__descriptionproduct-title-item--midline {
+    border: 0.3px dashed rgb(194, 187, 187);
+    margin: 15px 10px;
+}
+
+/* Nội dung */
+
+.main__descriptionproduct-content {
+    list-style: disc;
+}
+
+.main__descriptionproduct-content-item {
+    margin: 20px 120px;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+/* Lý do nên mua giày */
+/* Tiêu đề */
+.main__reason-title {
+    margin: 30px 0 20px 30px;
+    display: flex;
+}
+
+.main__reason-title-item--line {
+    flex: 1;
+}
+
+.main__reason-title-item--midline {
+    border: 0.3px dashed rgb(194, 187, 187);
+    margin: 15px 10px;
+}
+
+/* Nội dung */
+
+.main__reason-content {
+    list-style: disc;
+}
+
+.main__reason-content-item {
+    margin: 10px 120px;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+/*Sản phẩm tương tự -> Copy ở Giày th*/
+/* Tiêu đề */
+.main__similarproduct-title {
+    margin: 30px 0 20px 30px;
+    display: flex;
+}
+
+.main__similarproduct-title-item--line {
+    flex: 1;
+}
+
+.main__similarproduct-title-item--midline {
+    border: 0.3px dashed rgb(194, 187, 187);
+    margin: 15px 10px;
+}
+
+/* Nội dung */
+.main__similarproduct-listproduct {
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main__similarproduct--item {
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    border: 0.1px solid rgb(232, 205, 205);
+    border-radius: 4px;
+    margin: 20px 16px;
+
+}
+
+.main__products-item--discount {
+    /* flex: 1; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e10a0a;
+    border: 0.1px solid #8a1a1a;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    text-align: center;
+}
+
+.main__products-item--discount-label {
+    line-height: 4rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main__products-item--name-label {
+    font-size: 1.4rem;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.main__products-item--price {
+    text-align: center;
+}
+
+.main__products-item--price>label {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.main__products-item--label-giakhuyenmai {
+    color: red;
+}
+
+.main__products-item--label-giagoc {
+    padding-left: 20px;
+    color: rgb(142, 118, 118);
+    text-decoration: line-through;
+}
+
+/* Button xem thêm */
+
+.main__similarproduct-btn {
+    text-align: center;
+}
+
+.btn__xemthem {
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+
+.main__button-xemsanpham {
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+
+}

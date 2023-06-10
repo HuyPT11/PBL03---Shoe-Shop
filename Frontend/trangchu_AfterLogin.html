@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/trangchu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div style="
+                position: relative;
+                background: url(assets/img/trangchu.png);
+                width: 100%;
+                height: 900px;         
+                margin-bottom: 50px;">
+
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <img src="assets/img/logo.png" alt="" class="header__navbar-item--logo" />
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item--a header__navbar-item--yellow">TRANG CHỦ</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <!-- Position -->
+                        <a href="" class="header__navbar-item--a">NAM
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="header__dropdown--NAM">
+                            <ul class="header__dropdown--NAM-list">
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="giaythethao.html" class="header__dropdown--NAM-link">
+                                        Giày thể thao
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="" class="header__dropdown--NAM-link">
+                                        Giày Sneakers
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="" class="header__dropdown--NAM-link"> Giày da </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <!-- Position -->
+                        <a href="" class="header__navbar-item--a">NỮ
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="header__dropdown--NAM">
+                            <ul class="header__dropdown--NAM-list">
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="giaythethao.html" class="header__dropdown--NAM-link">
+                                        Giày thể thao
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="" class="header__dropdown--NAM-link">
+                                        Giày Sneakers
+                                    </a>
+                                </li>
+                                <li class="header__dropdown--NAM-item">
+                                    <a href="" class="header__dropdown--NAM-link"> Giày da </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        <a id="displayName" href="Admin_Page.html" class="header__navbar-item--a"></a>
+                    </li>
+                    <!-- <li class="header__navbar-item">
+                        <a href="dangnhap.html" class="header__navbar-item--a">ĐĂNG NHẬP</a>
+                    </li> -->
+                    <li class="header__navbar-item">
+                        <a href="giohang.html" class="header__navbar-item--a">
+                            <i class="fa-solid fa-cart-shopping header__navbar-item--icon-giohang"></i>
+                        </a>
+                    </li>
+                    <li id="LOGOUT" class="header__navbar-item">
+                        <button href="" class="header__navbar-item--button">
+                            ĐĂNG XUẤT
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main__outstanding">
+            <img src="./assets/img/outstanding_clsp.png" alt="">
+            <img src="./assets/img/outstanding_ht247.png" alt="">
+            <img src="./assets/img/outstanding_ghnc.png" alt="">
+        </div>
+        <div class="main__introduce">
+            <div class="main__introduce--img">
+                <ul class="main__introduce--img-list">
+                    <li class="main__introduce--img-item">
+                        <img class="main__introduce--img-item-img--large"
+                            src="https://thegioigiaybaoho.com/wp-content/uploads/2022/04/giay-chong-nuoc-jogger-x430.jpg"
+                            alt="">
+                    </li>
+                    <li class="main__introduce--img-item" style="position:relative;top:40px;left:0;">
+                        <img class="main__introduce--img-item-img--small"
+                            src="https://cdn.tgdd.vn/Files/2021/04/08/1341817/goi-y-5-mau-giay-tay-nam-thoi-trang-lich-su-sang-trong-danh-cho-phai-manh-202201151358256102.jpg"
+                            alt="">
+                    </li>
+                    <li class="main__introduce--img-item" style="position:relative;top:0;left:90px;">
+                        <img class="main__introduce--img-item-img--small"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9HPoiZ51NsDDYl9C4luQXC6CG-mJ1AAoIw&usqp=CAU"
+                            alt="">
+                    </li>
+                    <li class="main__introduce--img-item" style="position:relative;top:0;right:-30px;">
+                        <img class="main__introduce--img-item-img--large"
+                            src="./assets/img/giay-cao-got-mau-den-top-3-mau-giay-hot-nhat-nang-nen-so-huu-anh-3.jpg"
+                            alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="main__introduce--content">
+                <ul class="main__introduce--content-title--welcome">
+                    <li class="main__introduce--content-item">
+                        <h2 class="title-main">Chào mừng đến với</h2>
+                    </li>
+                    <li class="main__introduce--content-item">
+                        <img src="./assets/img/logo.png" style="width: 150px;height:30px;padding-left: 10px;" alt="">
+                    </li>
+                </ul>
+                <h3 class="title-sub">Bạn đang tìm kiếm những mẫu giày mới nhất trên mạng? Hãy mua sắm ngay tại NKH
+                    SHOP!</h3>
+                <h3 class="title-sub">Giày là một trong những phụ kiện không thể thiếu góp phần tạo nên phong cách thời
+                    trang của mỗi người. Chính vì điều đó NKH SHOP mong muốn đem đến những mẫu giầy mới nhất được cập
+                    nhật thường xuyên giúp các bạn dễ dàng hơn trong việc lựa chọn và cập nhật những style thịnh hành
+                    của thời trang giầy dép trong nước và thế giới.</h3>
+                <h2 class="title-main">Sản phẩm nổi bật</h2>
+                <ul class="main__introduce--content-title--category1">
+                    <li class="main__introduce--content-title--category1-item1">
+                        <img src="./assets/img/trangchu_spnt_giaythethao.png" alt="">
+                    </li>
+                    <li class="main__introduce--content-title--category1-item2">
+                        <img src="./assets/img/trangchu_spnt_giaysneakers.png" alt="">
+                    </li>
+                </ul>
+                <ul class="main__introduce--content-title--category2">
+                    <li class="main__introduce--content-title--category2-item3">
+                        <img src="./assets/img/trangchu_spnt_giayda.png" alt="">
+                    </li>
+                    <li class="main__introduce--content-title--category2-item4">
+                        <img src="./assets/img/trangchu_spnt_giaycaogot.png" alt="">
+                    </li>
+                </ul>
+                <div class="main__button">
+                    <button type="button" class="main__button-xemtatcasanpham">
+                        Xem tất cả sản phẩm
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__product">
+            <!-- GIÀY THỂ THAO -->
+            <div class="main__product-category">
+                <div class="main__product-category--title">
+                    <ul class="main__title">
+                        <li class="main__title-item main__title-item--content">
+                            <h1>GIÀY THỂ THAO</h1>
+                        </li>
+                        <li class="main__title-item main__title-item--line">
+                            <div class="main__title-item--midline"> </div>
+                        </li>
+                    </ul>
+                    <ul class="main__similarproduct-listproduct" id="main__similarproduct-listproduct--giaythethao">
+                    </ul>
+                    <ul class="main__similarproduct-btn">
+                        <li class="main__detail-description-item main__detail-description-item--themvaogiohang">
+                            <button type="button" class="btn__xemthem">
+                                XEM THÊM
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GIÀY SNEAKERS -->
+            <div class="main__product-category">
+                <div class="main__product-category--title">
+                    <ul class="main__title">
+                        <li class="main__title-item main__title-item--content">
+                            <h1>GIÀY SNEAKER</h1>
+                        </li>
+                        <li class="main__title-item main__title-item--line">
+                            <div class="main__title-item--midline"> </div>
+                        </li>
+                    </ul>
+                    <ul class="main__similarproduct-listproduct" id="main__similarproduct-listproduct--giaysneaker">
+                    </ul>
+                    <ul class="main__similarproduct-btn">
+                        <li class="main__detail-description-item main__detail-description-item--themvaogiohang">
+                            <button type="button" class="btn__xemthem">
+                                XEM THÊM
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <!-- GIÀY DA -->
+            <div class="main__product-category">
+                <div class="main__product-category--title">
+                    <ul class="main__title">
+                        <li class="main__title-item main__title-item--content">
+                            <h1>GIÀY DA</h1>
+                        </li>
+                        <li class="main__title-item main__title-item--line">
+                            <div class="main__title-item--midline"> </div>
+                        </li>
+                    </ul>
+                    <ul class="main__similarproduct-listproduct" id="main__similarproduct-listproduct--giayda">
+                    </ul>
+                    <ul class="main__similarproduct-btn">
+                        <li class="main__detail-description-item main__detail-description-item--themvaogiohang">
+                            <button type="button" class="btn__xemthem">
+                                XEM THÊM
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__infor">
+            <!-- Icons-->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="" class="footer__item--icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__item--icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__item--icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Thông tin -->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <h3 class="footer__item--title">THÔNG TIN NKH</h3>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__item--contact">Địa chỉ: 120 Nguyễn Lương Bằng, Phường Hòa Khánh Bắc, Quận Liên
+                        Chiểu, Thành phố Đà Nẵng</h4>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__item--contact">Hotline: 0826664434</h4>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__item--contact">Website: https://nkh.vn</h4>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__item--contact">Email: nkhvn@gmail.com</h4>
+                </li>
+            </ul>
+
+            <!-- Danh mục nổi bật -->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <h3 class="footer__item--title">DANH MỤC NỔI BẬT</h3>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__item--danhmucsp">
+                        Giày thể thao
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__item--danhmucsp">
+                        Giày Sneakers
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__item--danhmucsp">
+                        Giày da
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Địa chỉ -->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <h3 class="footer__item--title">TÌM CHÚNG TÔI</h3>
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="https://www.google.com/maps/place/120+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.0761082,108.1402153,15z/data=!3m1!4b1!4m6!3m5!1s0x314218d1551f2fb5:0x8c83c8054a4dced0!8m2!3d16.0761084!4d108.1489701!16s%2Fg%2F11qn88w7ql?hl=vi">
+                        <img src="./assets/img/ggmap.png" alt="" class="footer__item--img-ggmap">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./assets/js/trangchu_AfterLogin.js"></script>
+</body>
+
+</html>

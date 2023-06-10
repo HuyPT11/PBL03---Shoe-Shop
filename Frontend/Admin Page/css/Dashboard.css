@@ -1,0 +1,142 @@
+.chart {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.chart-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic {
+    margin: 0 auto;
+}
+
+.statistic_list {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.statistic_item {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.btn-statistic {
+    min-width: 150px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #E6C61F;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.input_statistic {
+    /* padding-left: 15px; */
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.linechart {
+    /* margin: 30px 50px 30px 20px; */
+    margin-top: 20px;
+    width: 750px;
+    /* margin: 0 auto; */
+
+    background-color: #fff;
+    border-radius: 12px;
+    /* margin-top: 30px; */
+    /* padding: 150px 0; */
+}
+
+.title {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.title_linechart {
+    margin-top: 20px;
+}
+
+#canvas_line {
+    width: 100%;
+    padding: 20px 40px;
+
+}
+
+.chart-right {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.doughnutchart {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+#canvas_doughnut {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 220px !important;
+    padding: 10px 20px;
+}
+
+.barchart {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+
+}
+
+#canvas_bar {
+    width: 100%;
+    padding: 10px 20px;
+    max-height: 180px !important;
+}
+
+/* Icon */
+.icon_dashboard {
+    font-size: 30px;
+}
+
+.icon_dashboard-revenue {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    color: pink;
+}
+
+.icon_dashboard-profit {
+    padding-left: 50px;
+    color: rgb(232, 219, 32);
+}
+
+.icon_dashboard-customer {
+    color: rgb(57, 35, 199);
+    padding-left: 40px;
+}
+
+.icon_dashboard-customer {
+    padding-left: 40px !important;
+}
+
+.icon_dashboard-order {
+    color: rgb(255, 221, 176);
+    padding-left: 45px;
+}
+#number_sales{
+    font-size: 2.6rem;
+    word-wrap: none;
+}
+.right-side{
+    min-height: 80px !important;
+}

@@ -1,0 +1,31 @@
+/* Main */
+main {
+    display: flex;
+}
+
+.main__block {
+    margin: 0 auto;
+    background-color: rgb(250, 249, 249);
+    max-width: 500px;
+    border: 0.3px solid rgb(176, 170, 170);
+    display: flex;
+}
+
+.main__infor-list {
+    padding: 30px 40px;
+}
+
+.main__infor-item {
+    padding: 6px 10px;
+}
+
+.main__infor-item--title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main__infor-item--content {
+    width: 350px;
+    height: 35px;
+}
+

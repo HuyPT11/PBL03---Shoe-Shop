@@ -1,0 +1,337 @@
+ul {
+    list-style: none;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header__navbar-list {
+    margin: auto 0px;
+    padding-right: 30px;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 16px;
+
+    position: relative;
+}
+
+/* Di chuột vào hiển thị bảng */
+.header__navbar-item--has-notify:hover .header__dropdown--NAM,
+.header__navbar-item--has-notify:hover .header__dropdown--NU,
+.header__navbar-item--has-notify:hover .header__dropdown--icon {
+    display: block;
+}
+
+/* Di chuột vào NAM */
+.header__dropdown--NAM,
+.header__dropdown--NU,
+.header__dropdown--icon {
+    position: absolute;
+    /* top: 118%; */
+    left: -10px;
+    width: 120px;
+    background-color: rgb(255, 253, 253);
+    border: 1px solid #D3D3D3;
+    /* cursor: default; */
+
+    /* transform-origin: top right; */
+    /* Chỉ định đc tâm của scale*/
+    animation: headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity, transform;
+    /* Trình duyệt sẽ tối ưu chuyển động  */
+    /* Chỉ hiện thị khi hover vào Thông báo */
+    display: none;
+}
+
+.header__dropdown--icon {
+    left: -30px;
+    width: 140px;
+}
+
+/*  Di chuột vào item "Thông báo" hiện bảng này*/
+@keyframes headerNotifyGrowth {
+
+    /* Hiện lớn và rõ dần */
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.header__dropdown--NAM-list,
+.header__dropdown--NU-list,
+.header__dropdown--icon-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.header__dropdown--NAM-item,
+.header__dropdown--NU-item,
+.header__dropdown--icon-item {
+    padding: 5px 0;
+    font-size: 1.4rem;
+}
+
+.header__dropdown--NAM-link,
+.header__dropdown--NU-link,
+.header__dropdown--icon-link {
+    text-decoration: none;
+    color: black;
+}
+
+.header__dropdown--NAM-link:hover,
+.header__dropdown--NU-link:hover,
+.header__dropdown--icon-link:hover {
+    color: rgba(234, 234, 99, 0.743)
+}
+
+.header__navbar-item--a {
+    text-decoration: none;
+    color: white;
+}
+.header__navbar-item--a-donhang{
+    color: #FAD410;
+}
+.header__navbar-item--a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.header__navbar-item--logo {
+    width: 300px;
+    height: 70px;
+
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title-list {
+    margin: 0 auto;
+}
+
+.header__title--large {
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.header__title-item {
+    display: inline-block;
+}
+
+.header__title--small>li {
+    font-size: 18px;
+    padding: 20px 5px 0 5px;
+    font-weight: 500;
+    color: white
+}
+
+.header__title-item--yellow {
+    color: #FAD410 !important;
+}
+
+/* Main */
+/* Tiêu đề */
+.main__title {
+    margin: 30px 0 40px 30px;
+    display: flex;
+}
+
+.main__title-item--line {
+    flex: 1;
+}
+
+.main__title-item--midline {
+    border: 0.3px dashed rgb(194, 187, 187);
+    margin: 15px 10px;
+}
+
+/* TÌm kiếm và sắp xếp */
+.main__header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main__header-list {
+   display: flex;
+}
+.main__header-item{
+    padding: 10px 50px;
+}
+
+/* Tìm kiếm */
+.form-control {
+    font-size: 1.6rem !important;
+}
+#button-addon2 {
+    font-size: 1.6rem !important;
+}
+/* Sort */
+.form-select {
+    font-size: 1.6rem !important;
+}
+/* Danh sách đơn hàng */
+.main__order{
+
+    margin:0 auto;
+    max-width: 800px;
+    border: 0.3px solid rgb(179, 142, 142);
+    background-color: rgb(252, 250, 250);
+    margin-bottom: 50px;
+}
+
+.main__order-product{
+    max-height: 100px;
+    display: flex;
+    margin: 10px 20px;
+}
+.main__order-product > div{
+    margin: 10px 10px;
+}
+.main__order-product--img{
+    max-width: 100px;
+    border: 0.3px solid black;
+}
+/* Ảnh nhỏ của sản phẩm */
+.order-product--img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Tên, nhãn hiệu, kích cỡ, màu, số lượng */
+.main__order-product--detail-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.main__order-product--detail-lb-name{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.main__order-product--detail-lb-brand_size_color,.main__order-product--detail-lb_quantity{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+/* Giá tiền */
+.main__order-product--price{
+    padding: 15px 0 15px 250px;
+    
+}
+.main__order-product--price-lb_giagoc{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: rgb(120, 108, 108);
+}
+.main__order-product--price-lb_giakm{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: red;
+}
+
+/* Đường kẻ ngăn cách giữa các sản phẩm */
+/* Căn giữa dòng kẻ */
+.main__order-line{
+    padding-bottom: 10px;
+   display: flex;
+}
+.main__order-line-border{
+    margin: 0 auto;
+    min-width: 700px;
+    border: 0.1px dashed rgb(156, 143, 143);
+}
+    /* Tổng số tiền */
+.main__order-product--total-list{
+    display: flex;
+    justify-content: flex-end ;
+    padding-right: 30px;
+}
+/* Icon */
+.main__order-product--total-i_icon{
+    color: #FAD410;
+    font-size: 2.5rem;
+}
+.main__order-product--total-lb_title{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.main__order-product--total-lb_content {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: red;
+    padding-left: 10px;
+}
+
+/* Button */
+.main__order-product--button-list {
+    display: flex;
+    justify-content: center;
+}
+.main__order-product--button-item{
+    margin: 20px 30px 10px 20px;
+}
+.main__order-product--button-huydonhang, .main__order-product--button-xemchitietdonhang{
+        border-radius: 5px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        background-color: #E6C61F;
+        border: none;
+        color: white;
+        padding: 5px 15px;
+}
+
+
+/* Footer */
+.footer__infor {
+    margin-top: 70px;
+    border: 0.5px solid rgb(44, 40, 40);
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* ul */
+.footer__list {
+    padding-top: 30px;
+}
+
+.footer__item {
+    padding: 8px;
+}
+
+.footer__item--icon {
+    color: black;
+    font-size: 30px;
+}
+
+.footer__item--danhmucsp {
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+}
+
+.footer__item--contact {
+    font-weight: 400;
+    max-width: 300px;
+}
+

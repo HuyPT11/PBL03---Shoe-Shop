@@ -1,0 +1,72 @@
+/* THÔNG TIN CHUNG */
+.home-content--infor {
+    border: 0.2px dash rgb(209, 193, 193);
+    background-color: rgb(230, 223, 223);
+    padding: 20px 20px;
+    margin-left: 50px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-content--infor-list {
+    padding: 15px 30px;
+}
+
+.home-content--infor-item {
+    display: inline-block;
+}
+
+.home-content--infor-item label {
+    color: blue;
+    font-size: 1.8rem;
+}
+
+.lb_thongtinchung {
+    color: black !important;
+    font-size: 2.4rem !important;
+    font-weight: 600;
+}
+
+.home-content--infor-item input {
+    width: 400px;
+    height: 30px;
+
+}
+
+.home-content--infor-item--text {
+    word-wrap: break-word;
+    position: absolute;
+    right: 30px;
+}
+
+.home-content--infor-item--img {
+    padding-right: 20px;
+    padding-left: 130px;
+}
+
+.btn__chontep,
+.btn__luuthaydoi {
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #0A2558;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+}
+
+/* Ảnh ở mô tả */
+#input_mota {
+    height: 60px;
+}
+
+.home-content--infor-list--mota {
+    margin-bottom: 30px;
+}
+
+/* Nút Lưu thay đỏi */
+.home-content--button {
+    margin: 30px 350px;
+}

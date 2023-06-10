@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giỏ hàng</title>
+
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/giohang.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/css/all.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div
+      style="position: relative; background: url(assets/img/giohang.png); width: 100%; height: 400px;margin-bottom: 50px;">
+
+      <nav class="header__navbar">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item">
+            <img src="assets/img/logo.png" alt="" class="header__navbar-item--logo">
+          </li>
+        </ul>
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item">
+            <a href="trangchu.html" class="header__navbar-item--a">TRANG CHỦ</a>
+          </li>
+          <li class="header__navbar-item header__navbar-item--has-notify">
+            <!-- Position -->
+            <a href="" class="header__navbar-item--a header__navbar-item--yellow">SẢN PHẨM
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div class="header__dropdown--NAM">
+              <ul class="header__dropdown--NAM-list">
+                <li class="header__dropdown--NAM-item">
+                  <a href="giaythethao.html" class="header__dropdown--NAM-link">
+                    Giày thể thao
+                  </a>
+                </li>
+                <li class="header__dropdown--NAM-item">
+                  <a href="giaysneaker.html" class="header__dropdown--NAM-link">
+                    Giày Sneakers
+                  </a>
+                </li>
+                <li class="header__dropdown--NAM-item">
+                  <a href="giayda.html" class="header__dropdown--NAM-link"> Giày da </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li id="register" class="header__navbar-item">
+            <a href="dangky.html" class="header__navbar-item--a">ĐĂNG KÝ</a>
+          </li>
+          <li id="login" class="header__navbar-item">
+            <a href="dangnhap.html" class="header__navbar-item--a">ĐĂNG NHẬP</a>
+          </li>
+          <li id="user" class="header__navbar-item">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <a id="displayName" href="Admin_Page.html" class="header__navbar-item--a"></a>
+          </li>
+          <!-- <li class="header__navbar-item">
+                <a href="dangnhap.html" class="header__navbar-item--a">ĐĂNG NHẬP</a>
+            </li> -->
+          <li id="cart" class="header__navbar-item">
+            <a href="giohang.html" class="header__navbar-item--a">
+              <i class="fa-solid fa-cart-shopping header__navbar-item--icon-giohang"></i>
+            </a>
+          </li>
+          <li id="LOGOUT" class="header__navbar-item">
+            <button href="" class="header__navbar-item--button">
+              ĐĂNG XUẤT
+            </button>
+          </li>
+        </ul>
+
+        </li>
+        <!-- <li class="header__navbar-item">
+                <a href="" class="header__navbar-item--a">
+                  <i class="fa-solid fa-cart-shopping header__navbar-item--icon-giohang" ></i>
+                </a>
+              </li> -->
+        </ul>
+      </nav>
+      <div class="header__title">
+        <ul class="header__title-list header__title--large">
+          <li class="header__title-item">GIỎ HÀNG</li>
+        </ul>
+        <ul class="header__title-list header__title--small">
+          <li class="header__title-item header__title-item--giohang">TRANG CHỦ</li>
+          <li class="header__title-item">/</li>
+          <li class="header__title-item">GIỎ HÀNG</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <ul class="main__title">
+      <li class="main__title-item main__title-item--content">
+        <h1>GIỎ HÀNG CỦA BẠN</h1>
+      </li>
+      <li class="main__title-item main__title-item--line">
+        <div class="main__title-item--midline"> </div>
+      </li>
+    </ul>
+    <div class="products">
+      <div class="product__header">
+        <ul class="product__header-list">
+          <li class="product__header-item product__header-item--sanpham">SẢN PHẨM</li>
+          <li class="product__header-item">ĐƠN GIÁ</li>
+          <li class="product__header-item product__header-item--mausac ">MÀU SẮC</li>
+          <li class="product__header-item product__header-item--kichco">KÍCH CỠ</li>
+          <li class="product__header-item">SỐ LƯỢNG</li>
+          <li class="product__header-item product__header-item--tongtien">TỔNG TIỀN</li>
+          <li class="product__header-item product__header-item--thaotac">THAO TÁC</li>
+        </ul>
+      </div>
+
+      <div id="product-detail" class="product__detail">
+        <!-- <ul class="product__detail-list"> -->
+        <!-- <li class="product-name"> -->
+        <!-- <img src="" alt="" class="image" />
+              <span class="name"></span> -->
+        <!-- <li class="product__detail-item" href="#">
+              <img
+                src="https://hoang-phuc.com/thoi-trang/wp-content/uploads/2021/11/giay-nam-di-choi-1.jpg"
+                alt=""
+                width="50"
+                height="30"
+                class="d-inline-block align-text-top"
+              />
+              NIKE AIR VAPORMAX
+            </li> -->
+        <!-- </li> -->
+        <!-- <li class="product-detail-item product-price">4,990,000 ₫</li>
+            <li class="product-detail-item product-color">Đen</li>
+            <li class="product-detail-item product-size">39</li>
+            <li class="product-detail-item product-quantity">1</li>
+            <li class="product-detail-item product-total">4,990,000 ₫</li>
+            <li class="product-detail-item product-action product-action--trash">
+              <i class="product-detail-item fa-sharp fa-solid fa-trash"></i>
+            </li> -->
+        <!-- </ul> -->
+        <!-- <div class="product__detail-line"> -->
+
+      <!-- </div> --> 
+      <!-- <ul class="product__detail-list"> -->
+      <!-- <li class="product-detail-item navbar-brand" href="#">
+            <img
+              src="https://hoang-phuc.com/thoi-trang/wp-content/uploads/2021/11/giay-nam-di-choi-3.jpg"
+              alt=""
+              width="50"
+              height="30"
+              class="d-inline-block align-text-top"
+            /> 
+            NIKE AIR JORDAN 1
+          </li>
+          <li class="product-detail-item product-price">7,990,000 ₫</li>
+          <li class="product-detail-item product-color">Đen</li>
+          <li class="product-detail-item product-size">38</li>
+          <li class="product-detail-item product-quantity">1</li>
+          <li class="product-detail-item product-total">7,990,000 ₫</li>
+          <li class="product-detail-item product-action product-action--trash">
+            <i class="fa-sharp fa-solid fa-trash"></i>
+          </li> -->
+      <!-- </ul> -->
+    </div>
+    </div>
+
+    <ul class="main__title">
+      <li class="main__title-item main__title-item--content">
+        <h1>ĐƠN HÀNG CỦA BẠN</h1>
+      </li>
+      <li class="main__title-item main__title-item--line">
+        <div class="main__title-item--midline"> </div>
+      </li>
+    </ul>
+    <div class="shoppingcart">
+      <ul class="shoppingcart__list">
+        <li class="shoppingcart__item--title-tongtienhang">TỔNG TIỀN HÀNG:</li>
+        <li class="shoppingcart__item--price-tongtienhang">0 đ</li>
+      </ul>
+      <ul class="shoppingcart__list">
+        <li class="shoppingcart__item--title-phivanchuyen">PHÍ VẬN CHUYỂN:</li>
+        <li class="shoppingcart__item--price-phivanchuyen">0 đ</li>
+      </ul>
+      <div class="shoppingcart__line"></div>
+      <ul class="shoppingcart__list">
+        <li class="shoppingcart__item shoppingcart__item--title-tong">TỔNG:</li>
+        <li id="total" class="shoppingcart__item shoppingcart__item--price-tong">0 đ</li>
+      </ul>
+    </div>
+    <ul class="main__title">
+      <li class="main__title-item main__title-item--content">
+        <h1>THÔNG TIN VẬN CHUYỂN</h1>
+      </li>
+      <li class="main__title-item main__title-item--line">
+        <div class="main__title-item--midline"> </div>
+      </li>
+    </ul>
+    <div class="informationtransportation">
+      <div class="informationtransportation__img">
+        <img src="./assets/img/thongtinvanchuyen.png" alt="" style="width: 500px; height: 100%">
+      </div>
+      <div class="informationtransportation__infor">
+        <h2 class="informationtransportation__infor--title">THÔNG TIN</h2>
+        <ul class="informationtransportation__infor-list">
+          <li class="informationtransportation__infor--infor-item">
+            <input type="text" id="name" class="form-control" placeholder="Họ tên ">
+          </li>
+          <li class="informationtransportation__infor--infor-item">
+            <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại">
+          </li>
+          <li id="cbb1" class="informationtransportation__infor--infor-item">
+            <input type="text" id="email" class="form-control" placeholder="Email">
+          </li>
+          <li id="cbb1" class="informationtransportation__infor--infor-item">
+            <div class="select">
+              <select id="province-select">
+
+              </select>
+            </div>
+          </li>
+          <li class="informationtransportation__infor--infor-item">
+            <input type="text" id="address" class="form-control" placeholder="Địa chỉ nhận hàng">
+          </li>
+          <li id="cbb2" class="informationtransportation__infor--infor-item">
+            <div class="select">
+              <select id="ship-select">
+
+              </select>
+            </div>
+          </li>
+          <li class="informationtransportation__infor--infor-item">
+            <input type="text" id="note" class="form-control" placeholder="Ghi chú">
+          </li>
+          <div class="informationtransportation__infor--button">
+            <button type="button" id="on" class="button-pay">Nhận hàng tại cửa hàng</button>
+            <button type="button" id="off" class="button-pay">Giao hàng</button>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__infor">
+      <!-- Icons-->
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="" class="footer__item--icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__item--icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__item--icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Thông tin -->
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item--title">THÔNG TIN NKH</h3>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item--contact">Địa chỉ: 120 Nguyễn Lương Bằng, Phường Hòa Khánh Bắc, Quận Liên Chiểu, Thành
+            phố Đà Nẵng</h4>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item--contact">Hotline: 0826664434</h4>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item--contact">Website: https://nkh.vn</h4>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item--contact">Email: nkhvn@gmail.com</h4>
+        </li>
+      </ul>
+
+      <!-- Danh mục nổi bật -->
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item--title">DANH MỤC NỔI BẬT</h3>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__item--danhmucsp">
+            Giày thể thao
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__item--danhmucsp">
+            Giày Sneakers
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__item--danhmucsp">
+            Giày da
+          </a>
+        </li>
+      </ul>
+
+      <!-- Địa chỉ -->
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item--title">TÌM CHÚNG TÔI</h3>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.google.com/maps/place/120+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.0761082,108.1402153,15z/data=!3m1!4b1!4m6!3m5!1s0x314218d1551f2fb5:0x8c83c8054a4dced0!8m2!3d16.0761084!4d108.1489701!16s%2Fg%2F11qn88w7ql?hl=vi">
+            <img src="./assets/img/ggmap.png" alt="" class="footer__item--img-ggmap">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/giohang.js"></script>
+  <script src="./assets/js/trangchu_AfterLogin.js"></script>
+</body>
+
+</html>
